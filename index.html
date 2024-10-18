@@ -1,87 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Mi Portafolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Empresa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
 
-    header {
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 0;
-      text-align: center;
-    }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
 
-    h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
 
-    #proyectos {
-      margin: 20px;
-    }
+        .contenedor {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+        }
 
-    .proyecto {
-      background-color: white;
-      padding: 15px;
-      border: 1px solid #ddd;
-      margin-bottom: 15px;
-    }
+        .descripcion {
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+        }
 
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #4CAF50;
-      color: white;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-    }
-  </style>
+        .proyectos {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .proyecto {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            width: 300px;
+            border-radius: 8px;
+        }
+
+        .proyecto h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .proyecto p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .boton {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .boton:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Hola, soy Marko Stosic</h1>
-    <p>Desarrollador web apasionado por la tecnología</p>
-  </header>
 
- <section id="proyectos">
-  <h2>Mis Proyectos</h2>
+    <header>
+        <h1>Nombre de la Empresa</h1>
+    </header>
 
-  <!-- Proyecto 1 -->
-  <div class="proyecto">
-    <h3>Nombre del Proyecto 1</h3>
-    <p>Breve descripción del proyecto. Tecnologías utilizadas: HTML, CSS, JavaScript.</p>
-    <a href="https://maarkostosiic.github.io/proyecto-1/" target="_blank">Ver Proyecto</a>
-  </div>
+    <div class="contenedor">
+        <div class="descripcion">
+            <p>Bienvenido a nuestro portafolio. A continuación, encontrarás algunos de nuestros mejores proyectos.</p>
+        </div>
 
-  <!-- Proyecto 2 -->
-  <div class="proyecto">
-    <h3>Nombre del Proyecto 2</h3>
-    <p>Breve descripción del proyecto. Tecnologías utilizadas: Python, Django, PostgreSQL.</p>
-    <a href="https://enlace-proyecto-2.com" target="_blank">Ver Proyecto</a>
-  </div>
+        <div class="proyectos">
+            <!-- Proyecto 1 -->
+            <div class="proyecto">
+                <h3>Proyecto 1</h3>
+                <p>Descripción breve del proyecto 1. Tecnologías usadas: HTML, CSS, JavaScript.</p>
+                <a href="href="https://maarkostosiic.github.io/proyecto-1/" " class="boton" target="_blank">Ver Proyecto 1</a>
+            </div>
 
-  <!-- Proyecto 3 -->
-  <div class="proyecto">
-    <h3>Nombre del Proyecto 3</h3>
-    <p>Breve descripción del proyecto. Tecnologías utilizadas: React, Node.js, MongoDB.</p>
-    <a href="https://enlace-proyecto-3.com" target="_blank">Ver Proyecto</a>
-  </div>
-</section>
+            <!-- Proyecto 2 -->
+            <div class="proyecto">
+                <h3>Proyecto 2</h3>
+                <p>Descripción breve del proyecto 2. Tecnologías usadas: Python, Django.</p>
+                <a href="https://enlace-al-proyecto-2.com" class="boton" target="_blank">Ver Proyecto 2</a>
+            </div>
 
+            <!-- Proyecto 3 -->
+            <div class="proyecto">
+                <h3>Proyecto 3</h3>
+                <p>Descripción breve del proyecto 3. Tecnologías usadas: React, Node.js.</p>
+                <a href="https://enlace-al-proyecto-3.com" class="boton" target="_blank">Ver Proyecto 3</a>
+            </div>
+        </div>
+    </div>
 
-  <footer>
-    <p>Contacto: tuemail@dominio.com</p>
-  </footer>
 </body>
 </html>
+
+
+
