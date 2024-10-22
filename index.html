@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -108,6 +110,54 @@
             border-radius: 8px;
             height: auto;
         }
+
+        /* Nueva sección de habilidades */
+        .habilidades {
+            margin: 40px 0;
+        }
+
+        .habilidades h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .habilidades ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .habilidades li {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            display: inline-block;
+            width: 200px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Sección de contacto con íconos */
+        .contacto {
+            margin: 40px 0;
+        }
+
+        .contacto h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .iconos-contacto a {
+            color: #333;
+            font-size: 2rem;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        .iconos-contacto a:hover {
+            color: #008000;
+        }
+
     </style>
 </head>
 <body>
@@ -117,19 +167,33 @@
     </header>
 
     <div class="contenedor">
-        <div class="descripcion">
+        <div class="descripcion" data-aos="fade-up">
             <p>Bienvenido a mi portafolio. A continuación, encontrarás algunos de mis proyectos.</p>
         </div>
 
-        <div class="curriculum">
+        <div class="curriculum" data-aos="fade-up">
             <a href="cv/Curriculum.pdf" target="_blank">
                 <img src="imagenes/foto_curriculum.jpg" alt="Currículum" />
             </a>
             <p>Haga clic en la imagen para ver mi currículum.</p>
         </div>
 
+        <!-- Sección de habilidades -->
+        <div class="habilidades" data-aos="fade-up">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Java</li>
+            </ul>
+        </div>
+
+        <!-- Proyectos -->
         <div class="proyectos">
-            <div class="proyecto">
+            <div class="proyecto" data-aos="fade-up">
                 <div class="vista-previa">
                     <img src="imagenes/festival.JPG" alt="Vista previa Proyecto">
                 </div>
@@ -139,7 +203,7 @@
                 <a href="https://maarkostosiic.github.io/proyecto-1/" class="boton" target="_blank">Ver Proyecto 1</a>
             </div>
 
-            <div class="proyecto">
+            <div class="proyecto" data-aos="fade-up">
                 <div class="vista-previa">
                     <img src="imagenes/Gestion.jpg" alt="Vista previa Proyecto">
                 </div>
@@ -149,7 +213,7 @@
                 <a href="https://maarkostosiic.github.io/proyecto-2/" class="boton" target="_blank">Ver Proyecto 2</a>
             </div>
 
-            <div class="proyecto">
+            <div class="proyecto" data-aos="fade-up">
                 <div class="vista-previa">
                     <img src="imagenes/Calculadora.jpg" alt="Vista previa Proyecto">
                 </div>
@@ -159,15 +223,28 @@
             </div>
         </div>
 
-        <div class="proyecto">
+        <div class="proyecto" data-aos="fade-up">
                 <div class="vista-previa">
                     <img src="imagenes/Biblioteca.jpg" alt="Vista previa Proyecto">
                 </div>
                 <h3>Proyecto 4</h3>
                 <p>Tecnologías usadas: Java, MYSQL.</p>
                 <a href="https://maarkostosiic.github.io/proyecto-4/" class="boton" target="_blank">Ver Proyecto 4</a>
+        </div>
+
+        <!-- Sección de contacto con íconos -->
+        <div class="contacto" data-aos="fade-up">
+            <h2>Contacto</h2>
+            <div class="iconos-contacto">
+                <a href="https://wa.me/627315191" target="_blank" title="Contactar por WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:markostosicm10@gmail.com" title="Enviar un correo"><i class="fas fa-envelope"></i></a>
             </div>
+        </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
