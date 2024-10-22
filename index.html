@@ -14,15 +14,18 @@
             text-align: center;
         }
 
+        /* Estilo de la cabecera con degradado diagonal suave */
         header {
-            background-color: #333;
-            color: white;
-            padding: 20px 0;
+            background: linear-gradient(135deg, #006400, #66ff66, #98fb98); /* Degradado diagonal de verde oscuro a verde claro */
+            padding: 50px 0; /* Aumenta el padding para hacerla más ancha */
+            border-bottom: none;
+            width: 100%; /* Asegura que ocupe todo el ancho de la ventana */
         }
 
         header h1 {
             margin: 0;
             font-size: 2.5rem;
+            color: white;
         }
 
         .contenedor {
@@ -34,6 +37,20 @@
         .descripcion {
             margin-bottom: 30px;
             font-size: 1.2rem;
+        }
+
+        .curriculum {
+            margin: 20px 0;
+        }
+
+        .curriculum img {
+            width: 150px; /* Ajusta el tamaño de la imagen según sea necesario */
+            cursor: pointer; /* Cambia el cursor al pasar el ratón */
+            transition: transform 0.3s; /* Transición para un efecto de zoom */
+        }
+
+        .curriculum img:hover {
+            transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
         }
 
         .proyectos {
@@ -61,8 +78,9 @@
             margin-bottom: 20px;
         }
 
+        /* Botones con color verde y transición a azul eléctrico */
         .boton {
-            background-color: #007BFF;
+            background-color: #008000; /* Verde */
             color: white;
             border: none;
             padding: 10px 20px;
@@ -74,7 +92,7 @@
         }
 
         .boton:hover {
-            background-color: #0056b3;
+            background-color: #0000ff; /* Azul eléctrico al pasar el ratón */
         }
     </style>
 </head>
@@ -89,12 +107,20 @@
             <p>Bienvenido a nuestro portafolio. A continuación, encontrarás algunos de nuestros mejores proyectos.</p>
         </div>
 
+        <!-- Sección de Currículum -->
+        <div class="curriculum">
+            <a href="URL_DE_TU_CURRICULUM" target="_blank">
+                <img src="imagenes/foto_curriculum.jpg" alt="Currículum" />
+            </a>
+            <p>Haga clic en la imagen para ver mi currículum.</p>
+        </div>
+
         <div class="proyectos">
             <!-- Proyecto 1 -->
             <div class="proyecto">
                 <h3>Proyecto 1</h3>
                 <p>Descripción breve del proyecto 1. Tecnologías usadas: HTML, CSS, JavaScript.</p>
-                <a href= "https://maarkostosiic.github.io/proyecto-1/" class="boton" target="_blank">Ver Proyecto 1</a>
+                <a href="https://maarkostosiic.github.io/proyecto-1/" class="boton" target="_blank">Ver Proyecto 1</a>
             </div>
 
             <!-- Proyecto 2 -->
@@ -108,13 +134,10 @@
             <div class="proyecto">
                 <h3>Proyecto 3</h3>
                 <p>Descripción breve del proyecto 3. Tecnologías usadas: PHP; HTML, CSS.</p>
-                <a href=" https://maarkostosiic.github.io/proyecto-3/" class="boton" target="_blank">Ver Proyecto 3</a>
+                <a href="https://maarkostosiic.github.io/proyecto-3/" class="boton" target="_blank">Ver Proyecto 3</a>
             </div>
         </div>
     </div>
 
 </body>
 </html>
-
-
-
