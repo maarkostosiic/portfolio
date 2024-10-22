@@ -44,11 +44,19 @@
         }
 
         
-        }
+       .curriculum img {
+    width: 150px; /* Ajusta el tamaño de la imagen según sea necesario */
+    border: 5px solid #008000; /* Color del marco */
+    border-radius: 12px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor de la imagen */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transición para el zoom y sombra */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
 
-        .curriculum img:hover {
-            transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
-        }
+.curriculum img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más fuerte al pasar el ratón */
+}
 
         .proyectos {
             display: flex;
