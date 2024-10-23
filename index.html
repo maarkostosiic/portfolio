@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
@@ -16,17 +16,42 @@
             text-align: center;
         }
 
+        /* Estilo del encabezado */
         header {
-            background: linear-gradient(135deg, #006400, #66ff66, #98fb98);
-            padding: 50px 0;
-            border-bottom: none;
-            width: 100%;
+            background-color: #1c1c1c;
+            color: white;
+            padding: 60px 20px;
+            position: relative;
+            text-align: center;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
-            color: rgb(80, 78, 78);
+            font-size: 3.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin: 10px 0 30px;
+            font-style: italic;
+        }
+
+        header .boton {
+            background-color: #008000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        header .boton:hover {
+            background-color: #006400;
         }
 
         .contenedor {
@@ -85,7 +110,7 @@
             margin-bottom: 20px;
         }
 
-        .boton {
+        .boton-proyecto {
             background-color: #008000;
             color: white;
             border: none;
@@ -97,7 +122,7 @@
             transition: background-color 0.3s ease;
         }
 
-        .boton:hover {
+        .boton-proyecto:hover {
             background-color: #0000ff;
         }
 
@@ -163,7 +188,9 @@
 <body>
 
     <header>
-        <h1>Portfolio Marko Stosic</h1>
+        <h1>Marko Stosic</h1>
+        <p>Desarrollador Full Stack | Creando soluciones digitales</p>
+        <a href="#proyectos" class="boton">Explorar Proyectos</a>
     </header>
 
     <div class="contenedor">
@@ -200,7 +227,7 @@
 
                 <h3>Proyecto 1</h3>
                 <p>Tecnologías usadas: HTML, CSS, JavaScript.</p>
-                <a href="https://maarkostosiic.github.io/proyecto-1/" class="boton" target="_blank">Ver Proyecto 1</a>
+                <a href="https://maarkostosiic.github.io/proyecto-1/" class="boton-proyecto" target="_blank">Ver Proyecto 1</a>
             </div>
 
             <div class="proyecto" data-aos="fade-up">
@@ -210,7 +237,7 @@
 
                 <h3>Proyecto 2</h3>
                 <p>Tecnologías usadas: JavaScript, PHP, HTML, CSS.</p>
-                <a href="https://maarkostosiic.github.io/proyecto-2/" class="boton" target="_blank">Ver Proyecto 2</a>
+                <a href="https://maarkostosiic.github.io/proyecto-2/" class="boton-proyecto" target="_blank">Ver Proyecto 2</a>
             </div>
 
             <div class="proyecto" data-aos="fade-up">
@@ -219,17 +246,17 @@
                 </div>
                 <h3>Proyecto 3</h3>
                 <p>Tecnologías usadas: PHP; HTML, CSS.</p>
-                <a href="https://maarkostosiic.github.io/proyecto-3/" class="boton" target="_blank">Ver Proyecto 3</a>
+                <a href="https://maarkostosiic.github.io/proyecto-3/" class="boton-proyecto" target="_blank">Ver Proyecto 3</a>
             </div>
-        </div>
 
-        <div class="proyecto" data-aos="fade-up">
+            <div class="proyecto" data-aos="fade-up">
                 <div class="vista-previa">
                     <img src="imagenes/Biblioteca.jpg" alt="Vista previa Proyecto">
                 </div>
                 <h3>Proyecto 4</h3>
                 <p>Tecnologías usadas: Java, MYSQL.</p>
-                <a href="https://maarkostosiic.github.io/proyecto-4/" class="boton" target="_blank">Ver Proyecto 4</a>
+                <a href="https://maarkostosiic.github.io/proyecto-4/" class="boton-proyecto" target="_blank">Ver Proyecto 4</a>
+            </div>
         </div>
 
         <!-- Sección de contacto con íconos -->
